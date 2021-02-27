@@ -1,4 +1,6 @@
-# get the public key as a single string, or store it in the script as a herestring.
+# Get the public key as a single string, or store it in the script as a herestring.
+# The password to the private key and the certificate in the examples folder is 'test'.
+
 $PublicKey = (Get-Content -Path ".\public.crt") -join "" # join because it is multi-line.
 
 # Please ensure your have imported Private.pfx

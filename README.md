@@ -10,6 +10,7 @@ A module to encrypt and decrypt a using public &amp; public keys respectively.
    - [Generate a Public & Private Key](#generate-a-public--private-key)
    - [Encoding data on the client](#encoding-data-on-the-client)
    - [Decoding Data](#decoding-data)
+3. [Example](#example)
 
 ## Introduction
 
@@ -116,3 +117,13 @@ Get-ChildItem -Path Cert:\CurrentUser\My
    ```powershell
    "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" | ConvertFrom-EncryptedString
    ```
+
+## Example
+
+The 'examples' folder contains a private certificate, public certificate and the key generated using the methodology in [Generate a Public & Private Key](#generate-a-public--private-key). The password to the private key and the certificate in the examples folder is 'test'.
+
+The script [examples.ps1](examples/example.ps1) encrypts some example text (Laurem Ipsom) using the public key and decrypts it using the private key (assuming it has been imported).
+
+## Function Details
+
+Please see module help [documentation](docs\PublicEncrypt.md) or use the built in help.
