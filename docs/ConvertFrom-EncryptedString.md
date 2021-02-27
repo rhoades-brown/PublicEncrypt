@@ -1,7 +1,7 @@
 ---
 external help file: PublicEncrypt-help.xml
 Module Name: PublicEncrypt
-online version:
+online version: https://github.com/rhoades-brown/PublicEncrypt/blob/main/docs/ConvertFrom-EncryptedString.md
 schema: 2.0.0
 ---
 
