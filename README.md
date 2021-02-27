@@ -21,7 +21,7 @@ This PowerShell contains two functions, one to encrypt a string using a public k
 
 I am using openssl to do this in wsl (for convenience).  
 
-```Shell
+```
 openssl req -x509 -newkey rsa:4096 -sha256 -keyout private.key -out public.crt -subj "/CN=SubjectName" -days 1095
 openssl pkcs12 -export -name "Certificate Purpose" -out Private.pfx -inkey private.key -in public.crt
 ```
@@ -32,7 +32,7 @@ Run each command in turn (you cannot copy/paste both lines together as the first
 - You must use that same PEM pass phrase for the private key in step 2.
 - It is not necessary, but highly recommended to specify an export password in step 2, this prevents the private certificate from being imported into a certificate store without knowing the password.
 
-```Shell
+```
 mark@WSL:/cert$ openssl req -x509 -newkey rsa:4096 -sha256 -keyout private.key -out public.crt -subj "/CN=SubjectName" -days 1095
 Generating a RSA private key
 .......................................................................................++++
