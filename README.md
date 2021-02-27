@@ -5,9 +5,11 @@ A module to encrypt and decrypt a using public &amp; public keys respectively.
 ## Table of contents
 
 1. [Introduction](#Introduction)
-2. [Section 2](#How-To-Use-This-Module)
-    - [Subsection a](#subsection-a)
-    - [Subsection b](#subsection-b)
+2. [How To Use This Module](#how-to-use-this-module)
+    - [Installation](#installation)
+    - [Generate a Public & Private Key](#generate-a-public--private-key)
+    - [Encoding data on the client](#encoding-data-on-the-client)
+    - [Decoding Data](#decoding-data)
 
 ## Introduction
 
@@ -48,6 +50,6 @@ Verifying - Enter Export Password:
 mark@WSL:/cert$
 ```
 
-### Encoding data in the client
+### Encoding Data on The Client
 
-### Decoding data
+### Decoding Data
